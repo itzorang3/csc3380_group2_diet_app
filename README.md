@@ -38,7 +38,7 @@ Installation and Setup:
 
     This creates `.class` files in the `src/recipeapp/` directory.
 
-4.Execute the main class:
+4. Execute the main class:
     java -cp src recipeapp.Main
 
 
