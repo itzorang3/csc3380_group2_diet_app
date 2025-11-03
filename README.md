@@ -30,15 +30,15 @@ Installation and Setup:
 
 1. **Clone or download the project** to your local machine
 
-3. **Navigate to project directory**:
+2. **Navigate to project directory**:
    cd Diet_app_project
 
-4. Compile all Java source files:
+3. Compile all Java source files:
     javac src/recipeapp/*.java
 
     This creates `.class` files in the `src/recipeapp/` directory.
 
-5.Execute the main class:
+4.Execute the main class:
     java -cp src recipeapp.Main
 
 
@@ -102,7 +102,7 @@ Since this is a **milestone version** we have the following limitations: **plann
    - No weighted ingredients (all ingredients treated equally)
    - No consideration for required vs optional ingredients
 
-8. **Single Execution Mode**
+7. **Single Execution Mode**
    - Runs once per execution
    - No interactive loop to try multiple ingredient combinations
    - Must restart application for new search
