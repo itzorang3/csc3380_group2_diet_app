@@ -2,7 +2,7 @@ import java.util.*;
 
 public class RecipeFinder {
 
-    public static HashSet<String> scanner() {
+    public static HashSet<String> scanner() { //scanner stores user input into hashset
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
@@ -12,13 +12,13 @@ public class RecipeFinder {
         return Ingredients;
     }
 
-    public static void Question() {
+    public static void Question() { //interaction with user by just asking question and storing answer into hashset
         System.out.println("SEPARATE THE INGREDIENTS WITH COMMAS & ONLY USE SPACES FOR SPECIFIC WORDS");
         System.out.println("e.g. pickles,pickled ginger,apples");
         System.out.println("Enter the ingredients: ");
     }
 
-    public static HashMap<String, Set<String>> Recipes() {
+    public static HashMap<String, Set<String>> Recipes() { //collection of recipes stored in hashmaps
         HashMap<String, Set<String>> Recipes = new HashMap<>();
         Recipes.put("Peanut Butter Sandwich", new HashSet<>(Arrays.asList("bread", "peanut butter", "jelly")));
         Recipes.put("Ham Cheese Sandwich", new HashSet<>(Arrays.asList("ham", "cheese", "bread")));
@@ -26,8 +26,8 @@ public class RecipeFinder {
 
         return Recipes;
     }
-
-    public static HashSet<String> BestRecipes(HashSet<String> Ingredients, HashMap<String, Set<String>> Recipes) {
+//moves Recipes into hashset and finds which recipe shares ingredients from user input 
+    public static HashSet<String> BestRecipes(HashSet<String> Ingredients, HashMap<String, Set<String>> Recipes) { 
         HashSet<String> BestRecipes = new HashSet<>();
         
         for (Map.Entry<String, Set<String>> entry : Recipes.entrySet()) {
@@ -56,5 +56,6 @@ public class RecipeFinder {
     }
 
 }
+
 
 
