@@ -74,7 +74,7 @@ Found 1 recipe(s) that are close but need more ingredients:
    Missing Ingredients: sugar, flour
 
 
-### Since this is a **milestone version** we have the following limitations: **planned to be completed for final submission**
+### Since this is a **milestone version** we have the following limitations: *planned to be completed for final submission
 
 1. **Hardcoded Recipe Database**
    - Currently contains only **10 test recipes**
