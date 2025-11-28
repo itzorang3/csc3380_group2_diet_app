@@ -6,7 +6,7 @@ This is an early version of the app with the main features:
 
 Ingredient Matching: HashSet-based algorithm that identifies any recipe containing at least one user ingredient
 Instant Results: Fast comparisons using Java collections framework
-Simple Interface: No GUI (for now) 
+Simple Interface: No GUI
 Flexible Input: Supports multi-word ingredients (e.g., "peanut butter", "pickled ginger")
 
 Note: There are only 3 recipes in the current version of the app (PB&J, Ham and cheese sandwich, and pan fried salmon), but we plan to use an API for future versions for a much larger database of recipes.
@@ -27,7 +27,7 @@ java.util.Scanner
 java.util.HashSet
 java.util.HashMap
 java.util.Arraylist
-
+java.util.Set
 
 
 INSTALLATION AND SETUP
