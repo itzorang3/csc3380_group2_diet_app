@@ -71,24 +71,21 @@ Show missing ingredients for each recipe
 Include multi-word ingredient support
 
 Example Output
-Choose your category (bulk / cut / regular):
-> bulk
+SEPARATE THE INGREDIENTS WITH COMMAS & ONLY USE SPACES FOR SPECIFIC WORDS
+e.g. pickles,pickled ginger,apples
+Enter the ingredients: 
+salmon,garlic,rice,eggs
 
-Enter your ingredients (comma-separated):
-> chicken, greek yogurt, rice
+Choose whether you want recipes for high (Bulk[B]) or low (Cut[C]) calories. Or don't care/want to see both (Regular[R])
+Type just the letter [B] for Bulk, [C] for Cut or [R] for Regular/Both
+r
 
-==============================
-       MATCHING RECIPES
-==============================
+Your best recipes (BULK):
+Pan Fried Sockeye Salmon: 2/3 ingredients (66%) - Missing: [butter]
+Fried Eggs and Rice: 2/3 ingredients (66%) - Missing: [oil]
+Spicy Pork Curry: 1/5 ingredients (20%) - Missing: [curry powder, pork, carrots, potatoes]
 
-Recipe: High-Protein Chicken Bowl
-Matched: 2/3 ingredients (66%)
-Missing: spinach
+Your best recipes (CUT):
+Oven Baked Pink Salmon: 2/4 ingredients (50%) - Missing: [black pepper, salt]
+Chicken Broccoli and Rice: 2/5 ingredients (40%) - Missing: [chicken, broccoli, salt]
 
-Recipe: Mass Gainer Shake
-Matched: 1/3 ingredients (33%)
-Missing: oats, peanut butter
-
-Recipe: Greek Yogurt Parfait
-Matched: 1/2 ingredients (50%)
-Missing: berries
