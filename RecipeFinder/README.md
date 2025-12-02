@@ -1,82 +1,84 @@
 Diet App – Group 2
+A console-based Java recipe finder that helps users discover recipes based on their available ingredients. The app supports three dietary categories (Bulk, Cut, and Regular) and provides intelligent matching with percentage calculations and missing ingredient identification.
 
-A console-based Java recipe finder that matches user ingredients to recipes across three categories: Bulk, Cut, and Regular. This version includes full ingredient normalization, match-percentage display, and missing-ingredient identification. All comparisons are case-insensitive and whitespace-trimmed, with full support for multi-word ingredients.
+🚀 Features
 
+Ingredient Matching: HashSet-based algorithm identifies recipes containing user ingredients
+Three Categories: Choose between Bulk (high calorie), Cut (low calorie), or Regular (both)
+Smart Normalization: Case-insensitive matching with automatic whitespace trimming
+Match Analytics: Displays percentage match and lists missing ingredients for each recipe
+Multi-word Support: Handles complex ingredients like "greek yogurt", "ground beef", "pickled ginger"
+Fast Performance: Leverages Java collections framework for instant results
+
+
+📋 Requirements
 Software
 
-Java Development Kit (JDK) 8 or higher
-
-Runs entirely on standard Java; no external services or APIs required
+Java Development Kit (JDK): Version 8 or higher
+No external services or APIs required
 
 Libraries
-
-This project uses only built-in Java libraries:
+Uses only standard Java libraries:
 
 java.util.Scanner
-
 java.util.HashSet
-
 java.util.HashMap
-
 java.util.Set
-
 java.util.Arrays
 
-No external dependencies.
+No external dependencies needed.
 
-Installation and Setup
+🛠️ Installation and Setup
 
-Navigate to the src folder containing the five Java files:
-Main.java, Input.java, PutInHashSet.java, BulkCutOrRegular.java, RecipeLibrary.java
+Navigate to the project directory:
 
-Compile all source files:
+bash   cd path/to/diet_app/src
 
-javac *.java
+Compile all Java files:
 
+bash   javac *.java
 
 Run the application:
 
-java Main
+bash   java Main
 
-Usage
+💡 Usage
+Running the App
 
 Launch the program:
 
-java Main
+bash   java Main
+```
 
+2. **Enter your ingredients** when prompted (comma-separated):
+```
+   salmon, garlic, rice, eggs
+```
+   - Use commas to separate ingredients
+   - Spaces only for multi-word ingredients (e.g., "greek yogurt")
+   - Capitalization doesn't matter
 
-Select a category at the prompt:
+3. **Select a category**:
+   - `B` or `b` → Bulk (high calorie recipes)
+   - `C` or `c` → Cut (low calorie recipes)
+   - `R` or `r` → Regular (shows both categories)
 
-bulk
+4. **View your results**:
+   - Recipe names with match percentages
+   - Missing ingredients for each recipe
+   - Sorted by category
 
-cut
+---
 
-regular
-
-Enter ingredients as a comma-separated list:
-
-chicken, rice, greek yogurt, spinach
-
-
-The app will:
-
-Normalize your input (case-insensitive, trimmed whitespace)
-
-Match ingredients against recipes in the selected category
-
-Display match counts and percentages
-
-Show missing ingredients for each recipe
-
-Include multi-word ingredient support
-
-Example Output
+## 📊 Example Output
+```
 SEPARATE THE INGREDIENTS WITH COMMAS & ONLY USE SPACES FOR SPECIFIC WORDS
 e.g. pickles,pickled ginger,apples
 Enter the ingredients: 
 salmon,garlic,rice,eggs
 
-Choose whether you want recipes for high (Bulk[B]) or low (Cut[C]) calories. Or don't care/want to see both (Regular[R])
+Choose whether you want recipes for high (Bulk[B]) or low (Cut[C]) calories. 
+Or don't care/want to see both (Regular[R])
 Type just the letter [B] for Bulk, [C] for Cut or [R] for Regular/Both
 r
 
@@ -88,4 +90,4 @@ Spicy Pork Curry: 1/5 ingredients (20%) - Missing: [curry powder, pork, carrots,
 Your best recipes (CUT):
 Oven Baked Pink Salmon: 2/4 ingredients (50%) - Missing: [black pepper, salt]
 Chicken Broccoli and Rice: 2/5 ingredients (40%) - Missing: [chicken, broccoli, salt]
-
+```
