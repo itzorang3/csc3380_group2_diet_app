@@ -23,23 +23,22 @@ public class Main {
         HashMap<String, Set<String>> bulkRecipeLibrary = recipeLibrary.BulkRecipes();
 
         if (bulkCutOrRegularInput == 'c'|| bulkCutOrRegularInput == 'C') {
+    System.out.println("Your best CUT recipes:");
+    bulkCutOrRegular.FindAndDisplayBestCutRecipes(ingredientsInHashSet, cutRecipeLibrary);
+}
 
-            HashSet<String> bestCutRecipes = bulkCutOrRegular.FindBestCutRecipes(ingredientsInHashSet, cutRecipeLibrary);
-            System.out.println("Your best recipes:");
+      if (bulkCutOrRegularInput == 'b'|| bulkCutOrRegularInput == 'B') {
+    System.out.println("Your best BULK recipes:");
+    bulkCutOrRegular.FindAndDisplayBestBulkRecipes(ingredientsInHashSet, bulkRecipeLibrary);
+}
 
-            System.out.println(bestCutRecipes);
-
-        }
-
-        if (bulkCutOrRegularInput == 'b'|| bulkCutOrRegularInput == 'B') {
-
-            HashSet<String> bestBulkRecipes = bulkCutOrRegular.FindBestCutRecipes(ingredientsInHashSet, bulkRecipeLibrary);
-            System.out.println("Your best recipes:");
-            System.out.println(bestBulkRecipes);
-
-        }
-
-
+	if (bulkCutOrRegularInput == 'r' || bulkCutOrRegularInput == 'R') {
+    System.out.println("Your best recipes (BULK):");
+    bulkCutOrRegular.FindAndDisplayBestBulkRecipes(ingredientsInHashSet, bulkRecipeLibrary);
+    
+    System.out.println("\nYour best recipes (CUT):");
+    bulkCutOrRegular.FindAndDisplayBestCutRecipes(ingredientsInHashSet, cutRecipeLibrary);
+}
 
 
 
