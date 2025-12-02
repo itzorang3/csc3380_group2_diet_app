@@ -48,12 +48,12 @@ Running the App
 Launch the program:
 
 bash   java Main
-```
+
 
 2. **Enter your ingredients** when prompted (comma-separated):
-```
+
    salmon, garlic, rice, eggs
-```
+
    - Use commas to separate ingredients
    - Spaces only for multi-word ingredients (e.g., "greek yogurt")
    - Capitalization doesn't matter
@@ -68,10 +68,10 @@ bash   java Main
    - Missing ingredients for each recipe
    - Sorted by category
 
----
+
 
 ## 📊 Example Output
-```
+
 SEPARATE THE INGREDIENTS WITH COMMAS & ONLY USE SPACES FOR SPECIFIC WORDS
 e.g. pickles,pickled ginger,apples
 Enter the ingredients: 
@@ -90,4 +90,5 @@ Spicy Pork Curry: 1/5 ingredients (20%) - Missing: [curry powder, pork, carrots,
 Your best recipes (CUT):
 Oven Baked Pink Salmon: 2/4 ingredients (50%) - Missing: [black pepper, salt]
 Chicken Broccoli and Rice: 2/5 ingredients (40%) - Missing: [chicken, broccoli, salt]
+
 
