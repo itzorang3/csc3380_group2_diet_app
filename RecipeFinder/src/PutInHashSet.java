@@ -2,12 +2,10 @@ import java.util.HashSet;
 
 public class PutInHashSet { //hashset cant have duplicates so tomatoes cant appear twice in hashset and no specific ordering like array so random ordering
 
-    private HashSet<String> ingredients; //Reference variable: declaring variable hashset Ingredients
+    public HashSet<String> inputInHashSet(String ingredientsInput) {
 
-    public HashSet<String> inputInHashSet(String ingredientsInput) { //Constructor:
-
-        this.ingredients = new HashSet<>();
-        //creates new instance of ingredients which stores object of HashSet class
+        HashSet<String> ingredients = new HashSet<>();
+        //creates new local variable ingredients which stores new object of hashset class
 
         String cleanedInput = ingredientsInput; //creates local var cleanedInput and stores ingredientsInput
 

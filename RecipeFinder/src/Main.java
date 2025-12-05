@@ -9,6 +9,7 @@ public class Main {
         PutInHashSet putInHashSet = new PutInHashSet(); //creating new instance of PutInHashSet class to access its methods
         BulkCutOrRegular bulkCutOrRegular = new BulkCutOrRegular();
         RecipeLibrary recipeLibrary = new RecipeLibrary();
+        WhichLibrary whichLibrary = new WhichLibrary();
 
         String ingredientsInput = input.getIngredients(); //user input of ingredients in getIngredients class stored in string ingredientsInput for local access
 
@@ -21,29 +22,7 @@ public class Main {
         HashMap<String, Set<String>> bulkRecipeLibrary = recipeLibrary.BulkRecipes();
         HashMap<String, Set<String>> regularRecipeLibrary = recipeLibrary.RegularRecipes();
 
-        if (bulkCutOrRegularInput == 'c'|| bulkCutOrRegularInput == 'C') {
-
-            HashMap<String, Set<String>> bestCutRecipes = bulkCutOrRegular.FindBestCutRecipes(ingredientsInHashSet, cutRecipeLibrary);
-            System.out.println("Your best recipes:");
-            System.out.println(bestCutRecipes);
-
-        }
-
-        if (bulkCutOrRegularInput == 'b'|| bulkCutOrRegularInput == 'B') {
-
-            HashMap<String, Set<String>> bestBulkRecipes = bulkCutOrRegular.FindBestBulkRecipes(ingredientsInHashSet, bulkRecipeLibrary);
-            System.out.println("Your best recipes:");
-            System.out.println(bestBulkRecipes);
-
-        }
-
-        if (bulkCutOrRegularInput == 'r'|| bulkCutOrRegularInput == 'R') {
-
-            HashMap<String, Set<String>> bestRegularRecipes = bulkCutOrRegular.FindBestBulkRecipes(ingredientsInHashSet, regularRecipeLibrary);
-            System.out.println("Your best recipes:");
-            System.out.println(bestRegularRecipes);
-
-        }
+        whichLibrary.whichLibrary(ingredientsInHashSet, bulkCutOrRegularInput);
 
 
         input.close();
