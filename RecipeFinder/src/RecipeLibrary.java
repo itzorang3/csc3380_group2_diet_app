@@ -10,9 +10,6 @@ public class RecipeLibrary {
         cutRecipes = new HashMap<>(); 
         bulkRecipes = new HashMap<>();
         regularRecipes = new HashMap<>();
-    }
-
-    public HashMap<String, Set<String>> CutRecipes() {
 
         cutRecipes.put("Protein Yogurt", Set.of("greek yogurt", "whey", "blueberries"));
         cutRecipes.put("Chicken Broccolli and Rice", Set.of("chicken", "garlic", "salt", "rice", "broccolli"));
@@ -34,12 +31,6 @@ public class RecipeLibrary {
         cutRecipes.put("Grilled Tilapia", Set.of("tilapia", "lemon", "garlic", "black pepper", "olive oil"));
         cutRecipes.put("Chicken Spinach Salad", Set.of("chicken", "spinach", "strawberries", "balsamic vinegar"));
         cutRecipes.put("Baked Turkey Meatballs", Set.of("ground turkey", "egg whites", "garlic", "italian seasoning"));
-
-        return cutRecipes; 
-
-    }
-
-    public HashMap<String, Set<String>> BulkRecipes() {
 
         bulkRecipes.put("Spicy Pork Curry", Set.of("curry powder", "pork", "rice", "carrots", "potatoes"));
         bulkRecipes.put("Ham Cheese Sandwich", Set.of("ham", "cheese", "bread", "mayonaise"));
@@ -67,16 +58,28 @@ public class RecipeLibrary {
         bulkRecipes.put("Philly Cheesesteak", Set.of("steak", "bread", "cheese", "bell peppers", "onions"));
         bulkRecipes.put("Chicken Parmesan", Set.of("chicken", "marinara sauce", "mozzarella cheese", "parmesan cheese", "pasta"));
 
+        regularRecipes.putAll(cutRecipes);
+        regularRecipes.putAll(bulkRecipes);
+
+    }
+
+    public HashMap<String, Set<String>> CutRecipes() { //getter methods
+
+        return cutRecipes; 
+
+    }
+
+    public HashMap<String, Set<String>> BulkRecipes() {
+
         return bulkRecipes;
 
     }
 
     public HashMap<String, Set<String>> RegularRecipes() {
-        regularRecipes.putAll(cutRecipes);
-        regularRecipes.putAll(bulkRecipes);
+
         return regularRecipes;
+
     }
 
 
 }
-
