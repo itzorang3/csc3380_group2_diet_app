@@ -45,20 +45,114 @@ SEPARATE THE INGREDIENTS WITH COMMAS
 e.g. pickles, pickled ginger,apples
 Enter the ingredients:
 salmon, garlic, rice, eggs
+Choose whether you want recipes for high (Bulk\[B]) or low (Cut\[C]) calories. Or don't care/want to see both (Regular\[R])
 
-Choose whether you want recipes for high (Bulk[B]) or low (Cut[C]) calories. Or don't care/want to see both (Regular[R])
-Type just the letter [B] for Bulk, [C] for Cut or [R] for Regular/Both
+Type just the letter \[B] for Bulk, \[C] for Cut or \[R] for Regular/Both
+
 r
 
-Your best recipes:
-{Pan Fried Sockeye Salmon=[butter, salmon, garlic],
- Fried Eggs and Rice=[eggs, rice, oil],
- Spicy Pork Curry=[curry powder, pork, rice, carrots, potatoes],
- Fried Rice=[rice, eggs, soy sauce, carrots, peas],
- Teriyaki Chicken Bowl=[chicken, rice, teriyaki sauce, broccolli],
- Oven Baked Pink Salmon=[salmon, garlic, black pepper, salt],
- Chicken Broccolli and Rice=[chicken, garlic, salt, rice, broccolli],
- Baked Cod=[cod, lemon, garlic, olive oil, black pepper],
- Shrimp Stir Fry=[shrimp, broccolli, carrots, soy sauce, garlic],
- Zucchini Noodles=[zucchini, marinara sauce, chicken, garlic],
- Baked Chicken Breast=[chicken, lemon, garlic, olive oil, rosemary]}
+
+
+Your best matching recipes:
+
+
+
+Pan Fried Sockeye Salmon
+
+&nbsp; Calories: 420 | Protein: 38g | Carbs: 5g | Fats: 25g
+
+&nbsp; Ingredients: \[butter, salmon, garlic]
+
+
+
+Fried Eggs and Rice
+
+&nbsp; Calories: 580 | Protein: 28g | Carbs: 65g | Fats: 22g
+
+&nbsp; Ingredients: \[eggs, rice, oil]
+
+
+
+Spicy Pork Curry
+
+&nbsp; Calories: 650 | Protein: 40g | Carbs: 70g | Fats: 20g
+
+&nbsp; Ingredients: \[curry powder, pork, rice, carrots, potatoes]
+
+
+
+Fried Rice
+
+&nbsp; Calories: 600 | Protein: 28g | Carbs: 70g | Fats: 20g
+
+&nbsp; Ingredients: \[rice, eggs, soy sauce, carrots, peas]
+
+
+
+Teriyaki Chicken Bowl
+
+&nbsp; Calories: 600 | Protein: 40g | Carbs: 70g | Fats: 20g
+
+&nbsp; Ingredients: \[chicken, rice, teriyaki sauce, broccolli]
+
+
+
+Oven Baked Pink Salmon
+
+&nbsp; Calories: 350 | Protein: 38g | Carbs: 8g | Fats: 18g
+
+&nbsp; Ingredients: \[salmon, garlic, black pepper, salt]
+
+
+
+Chicken Broccolli and Rice
+
+&nbsp; Calories: 450 | Protein: 45g | Carbs: 50g | Fats: 8g
+
+&nbsp; Ingredients: \[chicken, garlic, salt, rice, broccolli]
+
+
+
+Baked Cod
+
+&nbsp; Calories: 320 | Protein: 36g | Carbs: 6g | Fats: 16g
+
+&nbsp; Ingredients: \[cod, lemon, garlic, olive oil, black pepper]
+
+
+
+Shrimp Stir Fry
+
+&nbsp; Calories: 260 | Protein: 30g | Carbs: 18g | Fats: 10g
+
+&nbsp; Ingredients: \[shrimp, broccolli, carrots, soy sauce, garlic]
+
+
+
+Zucchini Noodles
+
+&nbsp; Calories: 280 | Protein: 32g | Carbs: 15g | Fats: 12g
+
+&nbsp; Ingredients: \[zucchini, marinara sauce, chicken, garlic]
+
+
+
+Baked Chicken Breast
+
+&nbsp; Calories: 320 | Protein: 38g | Carbs: 5g | Fats: 14g
+
+&nbsp; Ingredients: \[chicken, lemon, garlic, olive oil, rosemary]
+
+
+
+## 📈 Recipe Database:
+
+
+The app includes 44 recipes total:
+
+\- 19 Cut recipes (low-calorie options, typically 200-450 calories)
+
+\- 25 Bulk recipes (high-calorie options, typically 420-750 calories)
+
+\- All recipes include estimated macro nutrient values (calories, protein, carbohydrates, fats)
+
